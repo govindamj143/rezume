@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BeyondStox</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6d8a4a0587.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container h1{
+            /* font-family: "Redressed", cursive; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(128, 73, 180) !important;
+        }
+        :root{
+    --white: #fff;
+    --color: #842ce8ad;
+}
+.btn{
+    color: var(--color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 0px 14px;
+    border: 1px solid var(--color);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+} 
+.btn:hover{
+    color: var(--white);
+    text-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+.btn:before,
+.btn:after{
+    content: '';
+    background: var(--color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    transition: 1s ease;
+    z-index: -1;
+}
+.btn:after{
+    left: calc(100% + 16px);
+    top: calc(100% + 16px);
+}
+.btn:hover:before, 
+.btn:hover:after {
+    height: 410px;
+    width: 410px;
+}
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+            <a class="navbar-brand" href="index.html">BeyondStox</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Pricing</a>
+                </div>
+            </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="container col-xxl-8 px-4 py-5" style="margin-top: -80px;">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="img/Hero-Img.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">"Unlock the Value of Your Assets with Our Secured Loans"</h1>
+                <p class="lead">Our innovative platform bridges the gap between traditional banking systems and the world of stock ownership, providing you with a seamless and secure solution.</p>
+                <div class="d-grid gap-4 d-md-flex justify-content-md-start">
+                    <a href="login.html" class="btn" data-hover="button">
+                        <span>Login</span></a>
+                        <a href="sign_up.html" class="btn" data-hover="button">
+                            <span>Sign Up</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         <!-- footer -->
+          
+         <div
+          class="footer d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-dark " style="margin-top: -60px;">
+          <!-- Copyright -->
+          <div class="text-light mb-3 mb-md-0">
+          Copyright ©2024. All rights reserved.
+          </div>
+          <!-- Copyright -->
+      
+          <!-- Right -->
+          <div>
+          <a href="#!" class="text-light me-4"><i class="fab fa-facebook-f"></i></a>
+          <a href="#!" class="text-light me-4"><i class="fab fa-twitter"></i></a>
+          <a href="#!" class="text-light me-4"><i class="fab fa-google"></i></a>
+          <a href="#!" class="text-light"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
